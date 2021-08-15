@@ -1,6 +1,6 @@
 **[abstract](#Abstract) | [contents](#Contents) | [usage](#Usage) | [running the notebooks](#running-the-notebooks) | [issues](#issues) | [citation](#citation) | [license](#license)**
 
-# Uncertainty analysis of 3D potential-field deterministic inversion using mixed $L_p$ norms
+# Uncertainty analysis of 3D potential-field deterministic inversion using mixed L_p norms
 
 This repo can be used to reproduce inversion results from the paper published on GEOPHYSICS: [(Wei and Sun, 2021)](https://doi.org/10.1190/geo2020-0672.1). 
 
