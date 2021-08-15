@@ -18,7 +18,7 @@ There are two python scripts in this repository:
 There are also several accompanying files that will be loaded into the code:
 
 1. [mesh](./mesh.txt): UBC mesh file
-2. [grav.obs](./grav.obs): observed gravity gradient data simulated by using a horseshoe shaped synthetic model.
+2. [grav](./grav.obs): observed gravity gradient data simulated by using a horseshoe shaped synthetic model.
 3. [topo](./topo.topo): topography
 
 ## Usage
@@ -27,36 +27,29 @@ Here are step-by-step instructions for running these notebooks locally on your m
 
 Install Python. You can use [anaconda](https://www.anaconda.com/download/) for this.
 
-Clone this repository by running the following in your command line:
-
+- Install dependencies:
 ```
-git clone https://github.com/simpeg-research/Herring-2021-Hybrid-ERT-Inversion.git
-```
-
-Next, `cd` into the directory you just created:
-
-```
-cd Herring-2021-Hybrid-ERT-Inversion
+pip install -r requirements.txt
 ```
 
-You can use the provided conda environment to set up the necessary software packages:
-
+- Or, set up working environment using conda:
 ```
 conda env create -f environment.yml
-conda activate hybrid_ert
+conda activate sparse-environment
 ```
 
-You can then launch Jupyter with the following command
-
+- Install SimPEG
 ```
-jupyter notebook
+pip install SimPEG
+```
+- Or
+```
+conda install SimPEG --channel conda-forge
 ```
 
-And a Juputer notebook will launch in your web browser.
+## Running the code
 
-## Running the notebooks
-
-You can run each cell in the notebook individually by pressing  `shift + enter`, or you can run the entire notebook by selecting `Cell`, `Run All` in the toolbar.
+You can run the code in Spyder by clicking  `Run file` in the toolbar.
 
 ## Issues
 
